@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --liverpool-red: #b50a26;
 }
 
 @theme inline {
