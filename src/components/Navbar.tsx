@@ -2,12 +2,15 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import MobileNavbar from './MobileNavbar'
+import generateRandomLogos from '../utils/generateRandomLogos'
+import generateRandomLines from '../utils/generateRandomLines'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState(1)
   const [width, setWidth] = useState(1000)
   const [isScrolled, setIsScrolled] = useState(false)
-
+  const pathname = usePathname()
 
   useEffect(() => {
     setWidth(window.innerWidth)
@@ -33,7 +36,26 @@ const Navbar = () => {
             className={`fixed top-0 left-0 w-full z-50 shadow-md flex items-center justify-between p-4 px-10 transition-all duration-300 ${
                 isScrolled ? 'bg-[var(--liverpool-red)] py-2' : 'bg-transparent py-4'
             }`}
-            >           
+            >
+            {isScrolled && (
+            <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+                {generateRandomLines(25).map((line) => (
+                <div
+                    key={line.id}
+                    style={{
+                    position: 'absolute',
+                    top: `${line.top}%`,
+                    left: `${line.left}%`,
+                    height: `${line.height}px`,
+                    width: '1px',
+                    backgroundColor: 'rgba(255, 255, 0, 0.9)',
+                    transform: `rotate(${line.rotation}deg)`,
+                    // opacity: line.opacity,
+                    }}
+                />
+                ))}
+            </div>
+            )}
             <Link
                 href="/"
                 className="flex items-center font-black transition-all duration-300 ease-in-out hover:scale-105"
@@ -62,14 +84,14 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                href="/"
+                href="/gallery"
                 onClick={() => setActiveTab(2)}
                 className="hover:text-yellow-500 transition-all ease-in-out duration-300 hover:scale-105"
               >
                 Gallery
               </Link>
               <Link
-                href="/"
+                href="/about"
                 onClick={() => setActiveTab(3)}
                 className="hover:text-yellow-500 transition-all ease-in-out duration-300 hover:scale-105"
               >
@@ -77,9 +99,9 @@ const Navbar = () => {
               </Link>
               <div
                 className={`absolute w-12 h-1 bg-yellow-500 top-6 transition-all ease-in-out duration-300 ${
-                  (activeTab == 1 && 'left-0') ||
-                  (activeTab == 2 && 'left-[87px]') ||
-                  (activeTab == 3 && 'left-[185px]')
+                  (pathname === '/' && 'left-0') ||
+                  (pathname === '/gallery' && 'left-[87px]') ||
+                  (pathname === '/about' && 'left-[185px]')
                 }`}
               ></div>
             </div>
