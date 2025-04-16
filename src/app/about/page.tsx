@@ -29,7 +29,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">A Jersey Collector's Passion</h2>
+              <h2 className="text-2xl font-semibold">A Jersey Collector&apos;s Passion</h2>
               <p className="text-base leading-relaxed">
                 DebvJersey was born from a deep admiration of football history and jersey aesthetics. With over 40 carefully collected jerseys from clubs like Liverpool and AC Milan, each piece tells a story — from vintage classics to modern long-sleeve legends.
               </p>

@@ -6,7 +6,6 @@ import generateRandomLines from '../utils/generateRandomLines'
 import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState(1)
   const [width, setWidth] = useState(1000)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
@@ -77,21 +76,18 @@ const Navbar = () => {
             <div className="flex gap-10 font-bold relative">
               <Link
                 href="/"
-                onClick={() => setActiveTab(1)}
                 className="hover:text-yellow-500 transition-all ease-in-out duration-300 hover:scale-105"
               >
                 Home
               </Link>
               <Link
                 href="/gallery"
-                onClick={() => setActiveTab(2)}
                 className="hover:text-yellow-500 transition-all ease-in-out duration-300 hover:scale-105"
               >
                 Gallery
               </Link>
               <Link
                 href="/about"
-                onClick={() => setActiveTab(3)}
                 className="hover:text-yellow-500 transition-all ease-in-out duration-300 hover:scale-105"
               >
                 About

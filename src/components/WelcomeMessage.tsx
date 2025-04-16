@@ -2,12 +2,6 @@
 
 import Image from 'next/image'
 
-const jerseyStats = [
-  { label: 'Total Jersey', value: 40 },
-  { label: 'Vintage Jersey', value: 12 },
-  { label: 'Longsleeve Jersey', value: 9 }
-]
-
 const jerseyImages = [
   '/jerseys/1.jpg',
   '/jerseys/2.jpg',
