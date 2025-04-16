@@ -37,7 +37,7 @@ const Navbar = () => {
             >
             {isScrolled && (
             <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden">
-                {generateRandomLines(25).map((line) => (
+                {generateRandomLines(0).map((line) => (
                 <div
                     key={line.id}
                     style={{
