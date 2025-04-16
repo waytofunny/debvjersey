@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { Card, CardContent } from './ui/Card'
 
 const jerseyStats = [
   { label: 'Total Jersey', value: 40 },
@@ -27,18 +26,6 @@ const Welcome = () => {
         <p className="text-zinc-600 dark:text-zinc-300 max-w-2xl mx-auto">
           Explore a curated collection of premium football jerseys — from vintage classics to iconic long sleeve kits worn by legends.
         </p>
-      </div>
-
-      {/* Summary Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-        {jerseyStats.map((stat, index) => (
-          <Card key={index}>
-            <CardContent className="text-center">
-              <h2 className="text-4xl font-extrabold text-yellow-500">{stat.value}</h2>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300 mt-1">{stat.label}</p>
-            </CardContent>
-          </Card>
-        ))}
       </div>
 
       {/* Jersey Images */}

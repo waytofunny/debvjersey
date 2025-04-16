@@ -1,9 +1,8 @@
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import PhotoGrid from "@/components/PhotoGrid";
 import Footer from "@/components/Footer";
 import HeroSlider from "@/components/HeroSlider";
 import WelcomeMessage from "@/components/WelcomeMessage";
+import Statistic from "@/components/Statistic";
 
 export default function Home() {
   const handleImageClick = (src: string) => {
@@ -18,8 +17,9 @@ export default function Home() {
         <HeroSlider />
         {/* <PhotoGrid /> */}
         {/* <PhotoModal src={selected} onClose={() => setSelected(null)} /> */}
+        <WelcomeMessage />
+        <Statistic />
       </main>
-      <WelcomeMessage />
       <Footer />
     </div>
   );

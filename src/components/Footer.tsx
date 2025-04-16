@@ -1,5 +1,5 @@
-import Link from 'next/link'
-// import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import Link from "next/link"
+import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
 
 export default function Footer() {
   return (
@@ -22,9 +22,9 @@ export default function Footer() {
             
             {/* Social Media */}
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-white hover:text-yellow-200 transition-colors">Instagram</a>
-              <a href="#" className="text-white hover:text-yellow-200 transition-colors">Twitter</a>
-              <a href="#" className="text-white hover:text-yellow-200 transition-colors">Youtube</a>
+              <a href="#" className="text-white hover:text-yellow-200 transition-colors"><FaInstagram className="h-5 w-5" /></a>
+              <a href="#" className="text-white hover:text-yellow-200 transition-colors"><FaTwitter className="h-5 w-5" /></a>
+              <a href="#" className="text-white hover:text-yellow-200 transition-colors"><FaYoutube className="h-5 w-5" /></a>
             </div>
           </div>
 

@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import MobileNavbar from './MobileNavbar'
-import generateRandomLogos from '../utils/generateRandomLogos'
 import generateRandomLines from '../utils/generateRandomLines'
 import { usePathname } from 'next/navigation'
 
@@ -99,9 +98,9 @@ const Navbar = () => {
               </Link>
               <div
                 className={`absolute w-12 h-1 bg-yellow-500 top-6 transition-all ease-in-out duration-300 ${
-                  (pathname === '/' && 'left-0') ||
-                  (pathname === '/gallery' && 'left-[87px]') ||
-                  (pathname === '/about' && 'left-[185px]')
+                  (pathname === '/' && 'left-[-2px]') ||
+                  (pathname === '/gallery' && 'left-[88px]') ||
+                  (pathname === '/about' && 'left-[178px]')
                 }`}
               ></div>
             </div>
