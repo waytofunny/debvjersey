@@ -22,7 +22,7 @@ export default function Footer() {
             
             {/* Social Media */}
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-white hover:text-yellow-200 transition-colors"><FaInstagram className="h-5 w-5" /></a>
+              <a href="https://www.instagram.com/debvjersey/" className="text-white hover:text-yellow-200 transition-colors"><FaInstagram className="h-5 w-5" /></a>
               <a href="#" className="text-white hover:text-yellow-200 transition-colors"><FaTwitter className="h-5 w-5" /></a>
               <a href="#" className="text-white hover:text-yellow-200 transition-colors"><FaYoutube className="h-5 w-5" /></a>
             </div>
@@ -36,8 +36,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li><Link href="/gallery" className="hover:text-yellow-200 transition-colors text-sm">Gallery</Link></li>
-              <li><Link href="/collections" className="hover:text-yellow-200 transition-colors text-sm">Collections</Link></li>
-              <li><Link href="/featured" className="hover:text-yellow-200 transition-colors text-sm">Featured</Link></li>
+              <li><Link href="/collection/liverpool" className="hover:text-yellow-200 transition-colors text-sm">Liverpool&apos;s Collections</Link></li>
+              <li><Link href="/others" className="hover:text-yellow-200 transition-colors text-sm">Others</Link></li>
               <li><Link href="/new-arrivals" className="hover:text-yellow-200 transition-colors text-sm">New Arrivals</Link></li>
             </ul>
           </div>
@@ -50,9 +50,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li><Link href="/about" className="hover:text-yellow-200 transition-colors text-sm">About Us</Link></li>
-              <li><Link href="/blog" className="hover:text-yellow-200 transition-colors text-sm">Blog</Link></li>
-              <li><Link href="/careers" className="hover:text-yellow-200 transition-colors text-sm">Careers</Link></li>
-              <li><Link href="/press" className="hover:text-yellow-200 transition-colors text-sm">Press</Link></li>
+              <li><Link href="/contact-me" className="hover:text-yellow-200 transition-colors text-sm">Contact Me</Link></li>
             </ul>
           </div>
 
@@ -73,7 +71,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-xs">© {new Date().getFullYear()} DebvJersey. All rights reserved.</p>
+          <p className="text-xs">© {new Date().getFullYear()} DebvJersey. All rights reserved. @debvjalanan</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-xs hover:text-yellow-200 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="text-xs hover:text-yellow-200 transition-colors">Terms of Service</Link>
