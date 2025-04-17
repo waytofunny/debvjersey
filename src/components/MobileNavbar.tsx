@@ -54,7 +54,7 @@ const MobileNavbar = () => {
       )}
       {/* Logo */}
       <Link href="/" className="flex items-center font-black text-yellow-500 text-3xl">
-        D<span className="text-white text-lg ml-1 pt-1">ebversey</span>
+        D<span className="text-white text-lg ml-1 pt-1">ebvjersey</span>
       </Link>
 
       {/* Menu Icon */}
@@ -71,7 +71,7 @@ const MobileNavbar = () => {
         <div className="relative z-10 mt-35 flex flex-col justify-center items-center">
           <Link href="/" onClick={closeMenu} className="flex items-center font-black text-yellow-500 text-6xl">
             D
-            <span className="text-white text-2xl ml-1 pt-4">ebversey</span>
+            <span className="text-white text-2xl ml-1 pt-4">ebvjersey</span>
           </Link>
         </div>
         <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden">

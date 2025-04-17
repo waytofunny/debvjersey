@@ -70,7 +70,7 @@ const Navbar = () => {
                     isScrolled ? 'text-lg' : 'text-xl'
                     }`}
                 >
-                    ebversey
+                    ebvjersey
                 </h1>
             </Link>
             <div className="flex gap-10 font-bold relative">
